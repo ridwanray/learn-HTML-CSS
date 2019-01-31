@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+
+    <title>CSS Selectors</title>
+    <style>
+      .primary-heading {
+        color: green;
+      }
+
+      body {
+        background-color: #333;
+      }
+
+      #welcome {
+        background-color: #f4f4f4;
+      }
+
+      /*Multiple selector*/
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      #about {
+        font-family: Lato;
+        font-size: 30px;
+        background-color: #f4f4f4;
+      }
+
+      #welcome {
+        font-family: Lato;
+        font-size: 25px;
+      }
+      #welcome span {
+        font-weight: bold;
+      }
+
+      p {
+        color: #fe2957;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+        aperiam debitis pariatur alias eos ea, fugit voluptatibus delectus culpa
+        aliquam, iure at praesentium illum non nulla voluptatem similique
+        exercitationem ullam. Incidunt amet maiores natus ipsa officia sed
+        quibusdam eos eius neque
+        <span>
+          explicabo minima eveniet excepturi, ipsum omnis ut. Similique neque
+          tempore nesciunt alias recusandae quisquam illo aperiam quibusdam
+          repellendus nemo. Hic inventore at alias rerum, officiis dicta
+          perferendis dolorum quod velit </span
+        >fugiat, iste, adipisci maiores aut exercitationem ipsa? Distinctio eius
+        ad deserunt nostrum dicta, facilis voluptates veniam cumque suscipit
+        incidunt.
+      </p>
+    </div>
+
+    <div id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure est natus
+        repudiandae at, quidem illo ducimus placeat, repellat reiciendis
+        praesentium fugiat neque nostrum possimus culpa impedit voluptate,
+        facilis quisquam dicta! Unde nostrum vel fuga iure, molestiae quasi
+        porro veritatis animi? Sit animi labore aspernatur? Qui eaque tempora
+        molestias quia dignissimos ducimus earum delectus accusamus,
+        necessitatibus animi quo, minus consequatur eius. Sed nihil rerum nemo
+        ut quidem et voluptatum, officia veritatis cum mollitia ipsa asperiores
+        iusto recusandae expedita laboriosam omnis reiciendis consectetur error
+        dicta exercitationem quasi qui nulla! Nihil, excepturi aperiam.
+      </p>
+    </div>
+  </body>
+</html>
