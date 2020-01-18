@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid template area</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "content content sidebar"
+          "box-1 box-2 box-3"
+          "footer footer footer";
+        grid-gap: 1rem;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .content {
+        grid-area: content;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .box-1 {
+        grid-area: box-1;
+      }
+      .box-2 {
+        grid-area: box-2;
+      }
+      .box-3 {
+        grid-area: box-3;
+      }
+
+      .footer {
+        grid-area: footer;
+        text-align: center;
+      }
+
+      .header,
+      .content,
+      .sidebar,
+      .box-1,
+      .box-2,
+      .box-3,
+      .footer {
+        border: 1px #ccc solid;
+        padding: 0.5rem;
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "box-1"
+            "box-2"
+            "box-3"
+            "footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>My Website</h1></header>
+      <section class="content">
+        <h3>Welcome to my site</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta veniam
+          quidem, atque eaque mollitia illum aut omnis quisquam eum quis iure
+          maiores maxime nemo accusamus ducimus aliquam blanditiis dolore
+          corporis dolor tempore! Quaerat, quae. Rem consequatur quod architecto
+          voluptates! Perferendis.
+        </p>
+      </section>
+      <aside class="sidebar">
+        <h3>Contact us</h3>
+        <ul>
+          <li>Company</li>
+          <li>50 main street, BKK</li>
+          <li>dod@dbd.com</li>
+          <li>Tel: 099-999-9999</li>
+        </ul>
+      </aside>
+      <div class="box-1">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aut!
+          Doloribus quaerat voluptates ex impedit qui! Aut neque suscipit,
+          voluptatum mollitia illum saepe eos repellat, eveniet ab porro
+          consequatur et.
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aut!
+          Doloribus quaerat voluptates ex impedit qui! Aut neque suscipit,
+          voluptatum mollitia illum saepe eos repellat, eveniet ab porro
+          consequatur et.
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aut!
+          Doloribus quaerat voluptates ex impedit qui! Aut neque suscipit,
+          voluptatum mollitia illum saepe eos repellat, eveniet ab porro
+          consequatur et.
+        </p>
+      </div>
+      <footer class="footer"><p>Copyright &copy; 2020</p></footer>
+    </div>
+  </body>
+</html>
